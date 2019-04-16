@@ -482,7 +482,7 @@ let s:default_vcs_cmds = {
       \ 'cvs':      'cvs diff -U0 -- %f',
       \ 'rcs':      'rcsdiff -U0 %f 2>%n',
       \ 'accurev':  'accurev diff %f -- -U0',
-      \ 'perforce': 'p4 info '. sy#util#shell_redirect('%n') . (has('win32') ? ' &&' : ' && env P4DIFF= P4COLORS=') .' p4 diff -du0 %f',
+      \ 'perforce': 'a4 diff -du 0 %f',
       \ 'tfs':      'tf diff -version:W -noprompt -format:Unified %f'
       \ }
 
@@ -494,7 +494,7 @@ let s:default_vcs_cmds_diffmode = {
       \ 'darcs':    'darcs show contents -- %f',
       \ 'fossil':   'fossil cat %f',
       \ 'cvs':      'cvs up -p -- %f 2>%n',
-      \ 'perforce': 'p4 print %f',
+      \ 'perforce': 'a4 print %f',
       \ }
 
 if exists('g:signify_vcs_cmds')

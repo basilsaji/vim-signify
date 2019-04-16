@@ -32,7 +32,7 @@ Use your favorite [plugin
 manager](https://github.com/mhinz/vim-galore#managing-plugins), e.g. using
 [vim-plug](https://github.com/junegunn/vim-plug):
 
-    Plug 'mhinz/vim-signify'
+    Plug 'basilsaji/vim-signify'
 
 ## Documentation
 
